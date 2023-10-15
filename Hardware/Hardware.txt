@@ -4,3 +4,48 @@ ILI9341 with SD Card and Touch (320x240)
 OV7670 without FIFO
 Sparkfun Motor Driver
 2 DC Motors
+
+NET GPIO PINS USED (HAS NOT BEEN TESTED YET)
+1-17,19-21,33-42 (0 Available)
+
+For ILI9341 Display
+GPIO PINS USED 5-7,10-13, 15
+#define TFT_CS   10
+#define TFT_DC   5
+#define TFT_RST  6
+//Touch Additions
+#define TOUCH_CS 7
+//SD Card Additions
+#define SD_CS 15
+#define TFT_MOSI 11 // <==> TFT_SDI <==> T_DIN <==> SD_MOSI (Serial Data Input for device)
+#define TFT_SCLK 12 // <==> TFT_SCK <==> T_CLK <==> SD_SCK
+#define TFT_MISO 13 // <==> TFT_SD0 <==> T_D0  (Serial Data Output for device)/(Touch Data Output for device)
+
+FOR OVO Display (it interferes with USB)
+GPIO PINS USED 8-9,14,19-21,33-42
+#define OV7670_SCL 9 
+#define OV7670_SDA 8 
+#define OV7670_VS 14 
+#define OV7670_HS 19 
+#define OV7670_PCLK 20 
+#define OV7670_MCLK 21 
+#define OV7670_RST 33 
+#define OV7670_PWNN 34
+#define OV7670_D0 35
+#define OV7670_D1 36
+#define OV7670_D2 37
+#define OV7670_D3 38
+#define OV7670_D4 39
+#define OV7670_D5 40
+#define OV7670_D6 41
+#define OV7670_D7 42
+
+
+Motor Interfacing
+GPIO PINS USED 1-4,16-17
+#define MOTOR_AI1 1
+#define MOTOR_AI2 2
+#define MOTOR_BI1 3
+#define MOTOR_BI2 4
+#define MOTOR_APWM 16
+#define MOTOR_BPWM 17
