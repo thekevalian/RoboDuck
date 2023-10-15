@@ -1,0 +1,6 @@
+Current Hardware:
+ESP32 S2-Devkit C1 SOLO
+ILI9341 with SD Card and Touch (320x240)
+OV7670 without FIFO
+Sparkfun Motor Driver
+2 DC Motors
