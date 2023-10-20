@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "RoboDuck",
+			"path": "Software/Embedded_SW/RoboDuck"
+		}
+	],
+	"settings": {}
+}
